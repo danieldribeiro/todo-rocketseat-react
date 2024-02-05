@@ -1,0 +1,15 @@
+.header{
+    width: 100dvw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 4rem;
+    color: var(--blue);
+    background-color: var(--gray-700);
+}
+
+.header > strong span{
+    color: var(--purple-dark);
+}
