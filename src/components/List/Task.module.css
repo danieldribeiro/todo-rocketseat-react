@@ -1,0 +1,26 @@
+.task{
+    width: 100%;
+    height: auto;
+    background-color: var(--gray-500);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: var(--gray-100);
+    padding: 16px;
+}
+
+.taskDescription{
+    display: flex;
+    gap: 12px;
+}
+
+.taskDescription input[type="checkbox"]{
+    accent-color: var(--purple-dark);
+}
+
+.taskDescription input[type="checkbox"] {
+    border-radius: 50%; /* Deixa o input redondo */
+    margin-right: 10px;
+}
