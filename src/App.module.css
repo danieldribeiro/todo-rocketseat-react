@@ -18,3 +18,9 @@
 .listContainer{
     width: 100%;
 }
+
+.listContainer > div{
+    width: 100%;
+    border-top: 1px solid var(--gray-400);
+    margin-top: 24px;
+}

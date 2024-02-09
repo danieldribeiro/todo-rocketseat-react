@@ -1,11 +1,14 @@
 import styles from './Button.module.css'
-import plusIcon from '../assets/plus.svg'
 
-export function Button () {
+type Props = React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+>
+
+export function Button ({ children, ...rest }:Props) {
     return(
-        <button type="submit" className={styles.button}>
-            Criar
-            <img src={plusIcon} alt="" />
+        <button type="submit" className={styles.button} {...rest}>
+            {children}
         </button>
     )
 }

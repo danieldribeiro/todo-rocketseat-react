@@ -1,5 +1,5 @@
 .task{
-    width: 100%;
+    flex: 1;
     height: auto;
     background-color: var(--gray-500);
     border-radius: 8px;
@@ -9,18 +9,64 @@
     font-size: 1.4rem;
     color: var(--gray-100);
     padding: 16px;
+    margin-top: 12px;
 }
 
 .taskDescription{
     display: flex;
+    align-items: center;
     gap: 12px;
 }
 
-.taskDescription input[type="checkbox"]{
-    accent-color: var(--purple-dark);
+.paragraph-checked{
+    text-decoration: line-through;
+    color: var(--gray-300);
 }
 
-.taskDescription input[type="checkbox"] {
-    border-radius: 50%; /* Deixa o input redondo */
+.taskDescription input[type="checkbox"]{
+    display: none;
+}
+
+.checkbox {
+    width: 1.745rem;
+    height: 1.745rem;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
     margin-right: 10px;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.checkbox:hover{
+    border: 2px solid var(--blue-dark);
+}
+
+.checkbox-checked{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--purple-dark);
+    background-color: var(--purple-dark);
+}
+
+.delete{
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 4px 2px 4px;
+    transition: 0.2s background-color;
+    cursor: pointer;
+}
+
+.delete line, .delete path {
+    transition: 0.2s fill;
+}
+
+.delete:hover {
+background-color: var(--gray-400);
+}
+
+.delete:hover line, .delete:hover path {
+fill: var(--danger);
 }
