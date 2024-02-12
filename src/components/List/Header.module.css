@@ -1,0 +1,28 @@
+.header{
+    flex: 1;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header p{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--blue);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header p span{
+    color: var(--gray-200);
+
+    padding: 2px 8px;
+
+    background-color: var(--gray-400);
+
+    border-radius: 10px;
+}

@@ -1,0 +1,54 @@
+.taskContainer{
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px;
+
+    background-color: var(--gray-500);
+
+    border-radius: 8px;
+
+    font-size: 1.4rem;
+}
+
+.taskContainer p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chekbox{
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.chekbox:hover{
+    border: 2px solid var(--blue-dark);
+    background-color: rgba(30, 111, 159, .2);
+}
+
+.trash{
+    padding: 6px;
+
+    box-sizing: content-box;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+.trash:hover{
+    background-color: var(--gray-400);
+    fill: var(--danger);
+}

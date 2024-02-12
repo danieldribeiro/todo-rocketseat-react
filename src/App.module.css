@@ -1,0 +1,21 @@
+.main{
+    max-width: 736px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    margin: 0 auto;
+}
+
+.taskInputSection{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: -27px;
+}
+
+.listContainer{
+    flex: 1;
+    height: 287px;
+}
